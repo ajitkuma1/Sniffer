@@ -1,0 +1,40 @@
+9800-WLC:
+  ipAddress: "10.78.20.24"
+  username: "admin123"
+  pass: "bgl12"
+  commands:
+    - show interfaces summary
+    - show wireless interface summary
+    - show wlan summary
+    - show wireless country configured
+    - show ap summary
+    - show ap uptime
+    - show wireless client summary
+    - show wireless device-tracking database ip
+    - show wireless device-tracking database mac
+    - show wireless redundancy summary
+    - show wireless exclusionlist
+    - show wireless fabric control-plane wncd 0
+
+    - show running-config
+    - show telemetry internal connection
+    - show wireless profile policy summary
+    - show wireless fabric summary
+    - show fabric wlan summary
+    - show wireless tag site summary
+    - show wireless tag policy summary
+    - show wireless tag rf summary
+    - show wireless client summary
+    - show wireless fabric client summary
+    - show wireless device-tracking database mac
+    - show wireless client device cache
+  wirelessClient:
+    - show wireless client summary
+    - show wireless client summary | inc MAC|--|503e.aadb.9248
+    - sh wireless device-tracking database mac 503e.aadb.9248
+    - show wireless client mac-address 503e.aadb.9248 detail
+    - show wireless client device cache | inc MAC|--|503e.aadb.9248
+    - show wireless fabric client mac-address 503e.aadb.9248 history
+    - show wireless fabric control-plane wncd 0
+
+
